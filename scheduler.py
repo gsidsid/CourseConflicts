@@ -7,7 +7,6 @@ R = Registrar()
 G = Graph()
 node_colors = []
 
-
 def color_graph_builtin(g):
     nxGraph = g.G
     d = nx.greedy_color(nxGraph, strategy='independent_set')
