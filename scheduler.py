@@ -16,7 +16,7 @@ def color_graph_builtin(g):
     color_idx = -1
     for class_item in d:
         node_colors.append(color_map[d[class_item]])
-    print(node_colors)
+    return node_colors
 
 
 def color_graph(g):
@@ -25,5 +25,6 @@ def color_graph(g):
 
 
 G.build_graph(R.course_book)
-color_graph_builtin(G)
-G.visualize(node_colors)
+G.color_map = color_graph_builtin(G)
+G.visualize()
+G.export_graph()
