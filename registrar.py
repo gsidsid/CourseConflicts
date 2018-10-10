@@ -1,5 +1,6 @@
 
 class Registrar(object):
+
 	course_book = {
 		"Discrete":["MT900","MT1040"], 
 		"Bayesian":["TF900","TF1040"], 
@@ -9,6 +10,7 @@ class Registrar(object):
 		"QEAII":["MT1300"], 
 		"PoE":["TF900","TF1040"]
 	}
+	
 	slotMappings = {
 		"MT900": "red",
 		"MT1040": "blue",

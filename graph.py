@@ -29,3 +29,16 @@ class Graph(object):
 
 	def get_edges(self):
 		return list(self.G.edges)
+
+	def slot_overlap(self,s,l):
+	    len_s = len(s)
+	    return any(s == l[i:len_s+i] for i in xrange(len(l) - len_s+1))
+
+	def build_graph(self,course_book):
+		for course in course_book:
+			self.add_node(course)
+			_node_labels = list(self.get_nodes())
+			slots = course_book[course]
+			for label in _node_labels:
+				if self.slot_overlap(slots,course_book[label]):
+					self.add_edge(course,label)
