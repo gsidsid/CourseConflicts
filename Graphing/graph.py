@@ -16,7 +16,7 @@ class Graph(object):
         self.semester = semester
 
     def visualize(self):
-        pos = nx.circular_layout(self.G)
+        pos = nx.random_layout(self.G)
         nx.draw(
             self.G,
             pos,
@@ -24,7 +24,7 @@ class Graph(object):
             node_color=self.color_map,
             with_labels=False)
         for p in pos:  # raise text positions
-            pos[p][1] += 0.07
+            pos[p][1] += 0.04
         nx.draw_networkx_labels(self.G, pos)
         plt.show()
 
@@ -33,6 +33,9 @@ class Graph(object):
 
     def get_vertices(self):
         return (self.G.nodes)
+
+    def get_vertex(self,idx):
+        return list(self.G.nodes)[idx]
 
     def add_edge(self, offering1, offering2):
         self.G.add_edge(offering1, offering2)
@@ -55,9 +58,13 @@ class Graph(object):
             for label in _node_labels:
                 if self.slot_overlap(slots, course_book[label]):
                     self.add_edge(course, label)
-            color_map = ['black' for x in range(len(course_book))]
+            self.color_map = ['black' for x in range(len(course_book))]
 
     def export_graph(self):
+        idx = 0
+        for course in list(self.get_vertices()):
+            self.G.nodes[course]['color'] = self.color_map[idx]
+            idx += 1
         nxg2j = json_graph.node_link_data(self.G)
         with open('../Visualizations/Web/graph.json', 'w') as f:
             json.dump(nxg2j, f, indent=4)
