@@ -1,0 +1,393 @@
+{
+    "directed": false, 
+    "graph": {}, 
+    "nodes": [
+        {
+            "type": "circle", 
+            "id": "ENGR2110", 
+            "label": "ENGR2110"
+        }, 
+        {
+            "type": "circle", 
+            "id": "MTH2110", 
+            "label": "MTH2110"
+        }, 
+        {
+            "type": "circle", 
+            "id": "MTH2220", 
+            "label": "MTH2220"
+        }, 
+        {
+            "type": "circle", 
+            "id": "AHSE1100", 
+            "label": "AHSE1100"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR2097", 
+            "label": "ENGR2097"
+        }, 
+        {
+            "type": "circle", 
+            "id": "AHSE2515", 
+            "label": "AHSE2515"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR4190", 
+            "label": "ENGR4190"
+        }, 
+        {
+            "type": "circle", 
+            "id": "SCI1240", 
+            "label": "SCI1240"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR2199 L", 
+            "label": "ENGR2199 L"
+        }, 
+        {
+            "type": "circle", 
+            "id": "SCI2097", 
+            "label": "SCI2097"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR3330", 
+            "label": "ENGR3330"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR2510", 
+            "label": "ENGR2510"
+        }, 
+        {
+            "type": "circle", 
+            "id": "SCI1410", 
+            "label": "SCI1410"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR3232", 
+            "label": "ENGR3232"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR1200", 
+            "label": "ENGR1200"
+        }, 
+        {
+            "type": "circle", 
+            "id": "MTH1111", 
+            "label": "MTH1111"
+        }, 
+        {
+            "type": "circle", 
+            "id": "AHSE1150", 
+            "label": "AHSE1150"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR2199A", 
+            "label": "ENGR2199A"
+        }, 
+        {
+            "type": "circle", 
+            "id": "SCI1121", 
+            "label": "SCI1121"
+        }, 
+        {
+            "type": "circle", 
+            "id": "OIE1000", 
+            "label": "OIE1000"
+        }, 
+        {
+            "type": "circle", 
+            "id": "MTH2132", 
+            "label": "MTH2132"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR1125", 
+            "label": "ENGR1125"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR3290", 
+            "label": "ENGR3290"
+        }, 
+        {
+            "type": "circle", 
+            "id": "AHSE2097", 
+            "label": "AHSE2097"
+        }, 
+        {
+            "type": "circle", 
+            "id": "AHSE1135", 
+            "label": "AHSE1135"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR3410", 
+            "label": "ENGR3410"
+        }, 
+        {
+            "type": "circle", 
+            "id": "ENGR3533", 
+            "label": "ENGR3533"
+        }, 
+        {
+            "type": "circle", 
+            "id": "CIE2018B", 
+            "label": "CIE2018B"
+        }
+    ], 
+    "links": [
+        {
+            "source": "ENGR2110", 
+            "target": "AHSE1135"
+        }, 
+        {
+            "source": "ENGR2110", 
+            "target": "ENGR2110"
+        }, 
+        {
+            "source": "ENGR2110", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "ENGR2110", 
+            "target": "ENGR3330"
+        }, 
+        {
+            "source": "ENGR2110", 
+            "target": "AHSE1100"
+        }, 
+        {
+            "source": "ENGR2110", 
+            "target": "MTH2132"
+        }, 
+        {
+            "source": "MTH2110", 
+            "target": "SCI1121"
+        }, 
+        {
+            "source": "MTH2110", 
+            "target": "MTH2110"
+        }, 
+        {
+            "source": "MTH2110", 
+            "target": "AHSE2515"
+        }, 
+        {
+            "source": "MTH2220", 
+            "target": "MTH2220"
+        }, 
+        {
+            "source": "MTH2220", 
+            "target": "CIE2018B"
+        }, 
+        {
+            "source": "AHSE1100", 
+            "target": "AHSE1135"
+        }, 
+        {
+            "source": "AHSE1100", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "AHSE1100", 
+            "target": "ENGR3330"
+        }, 
+        {
+            "source": "AHSE1100", 
+            "target": "AHSE1100"
+        }, 
+        {
+            "source": "AHSE1100", 
+            "target": "MTH2132"
+        }, 
+        {
+            "source": "ENGR2097", 
+            "target": "AHSE2097"
+        }, 
+        {
+            "source": "ENGR2097", 
+            "target": "SCI2097"
+        }, 
+        {
+            "source": "ENGR2097", 
+            "target": "ENGR2097"
+        }, 
+        {
+            "source": "AHSE2515", 
+            "target": "SCI1121"
+        }, 
+        {
+            "source": "AHSE2515", 
+            "target": "AHSE2515"
+        }, 
+        {
+            "source": "ENGR4190", 
+            "target": "ENGR4190"
+        }, 
+        {
+            "source": "ENGR4190", 
+            "target": "OIE1000"
+        }, 
+        {
+            "source": "ENGR4190", 
+            "target": "ENGR2199A"
+        }, 
+        {
+            "source": "SCI1240", 
+            "target": "AHSE1150"
+        }, 
+        {
+            "source": "SCI1240", 
+            "target": "ENGR3533"
+        }, 
+        {
+            "source": "SCI1240", 
+            "target": "ENGR3232"
+        }, 
+        {
+            "source": "SCI1240", 
+            "target": "SCI1240"
+        }, 
+        {
+            "source": "ENGR2199 L", 
+            "target": "ENGR2199 L"
+        }, 
+        {
+            "source": "SCI2097", 
+            "target": "AHSE2097"
+        }, 
+        {
+            "source": "SCI2097", 
+            "target": "SCI2097"
+        }, 
+        {
+            "source": "ENGR3330", 
+            "target": "AHSE1135"
+        }, 
+        {
+            "source": "ENGR3330", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "ENGR3330", 
+            "target": "ENGR3330"
+        }, 
+        {
+            "source": "ENGR3330", 
+            "target": "MTH2132"
+        }, 
+        {
+            "source": "ENGR2510", 
+            "target": "ENGR2510"
+        }, 
+        {
+            "source": "SCI1410", 
+            "target": "SCI1410"
+        }, 
+        {
+            "source": "ENGR3232", 
+            "target": "AHSE1150"
+        }, 
+        {
+            "source": "ENGR3232", 
+            "target": "ENGR3533"
+        }, 
+        {
+            "source": "ENGR3232", 
+            "target": "ENGR3232"
+        }, 
+        {
+            "source": "ENGR1200", 
+            "target": "ENGR1200"
+        }, 
+        {
+            "source": "MTH1111", 
+            "target": "MTH1111"
+        }, 
+        {
+            "source": "AHSE1150", 
+            "target": "ENGR3533"
+        }, 
+        {
+            "source": "AHSE1150", 
+            "target": "AHSE1150"
+        }, 
+        {
+            "source": "ENGR2199A", 
+            "target": "ENGR2199A"
+        }, 
+        {
+            "source": "SCI1121", 
+            "target": "SCI1121"
+        }, 
+        {
+            "source": "OIE1000", 
+            "target": "OIE1000"
+        }, 
+        {
+            "source": "MTH2132", 
+            "target": "AHSE1135"
+        }, 
+        {
+            "source": "MTH2132", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "MTH2132", 
+            "target": "MTH2132"
+        }, 
+        {
+            "source": "ENGR1125", 
+            "target": "ENGR1125"
+        }, 
+        {
+            "source": "ENGR1125", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "ENGR1125", 
+            "target": "AHSE1135"
+        }, 
+        {
+            "source": "ENGR1125", 
+            "target": "CIE2018B"
+        }, 
+        {
+            "source": "ENGR3290", 
+            "target": "ENGR3290"
+        }, 
+        {
+            "source": "AHSE2097", 
+            "target": "AHSE2097"
+        }, 
+        {
+            "source": "AHSE1135", 
+            "target": "AHSE1135"
+        }, 
+        {
+            "source": "AHSE1135", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "ENGR3410", 
+            "target": "ENGR3410"
+        }, 
+        {
+            "source": "ENGR3533", 
+            "target": "ENGR3533"
+        }, 
+        {
+            "source": "CIE2018B", 
+            "target": "CIE2018B"
+        }
+    ], 
+    "multigraph": false
+}

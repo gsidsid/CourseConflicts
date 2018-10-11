@@ -3,6 +3,7 @@ from networkx.readwrite import json_graph
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
+import json
 
 
 class Graph(object):
@@ -28,7 +29,7 @@ class Graph(object):
         plt.show()
 
     def add_vertex(self, offering):
-        self.G.add_node(offering)
+        self.G.add_node(offering, type = "circle", label=offering)
 
     def get_vertices(self):
         return (self.G.nodes)
@@ -58,4 +59,5 @@ class Graph(object):
 
     def export_graph(self):
         nxg2j = json_graph.node_link_data(self.G)
-        print(str(nxg2j))
+        with open('../Visualizations/Web/graph.json', 'w') as f:
+            json.dump(nxg2j, f, indent=4)
