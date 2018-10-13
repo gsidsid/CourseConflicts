@@ -1,4 +1,7 @@
+from Graphing.registrar import Registrar
+
 def color_graph(graph):
+    R = Registrar()
     vertices = graph.get_vertices()
     if len(vertices) == 0:
         raise ValueError('Graph must have at least 1 vertex.')
@@ -13,7 +16,7 @@ def color_graph(graph):
 
     # Color all of the vertices in the graph object
     for vertex, color in colored_vertices.items():
-        graph.color_vertex(vertex, color)
+        graph.color_vertex(vertex, R.slotMappings.values()[color])
 
     return graph, colored_vertices
 

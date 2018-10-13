@@ -72,5 +72,5 @@ class Graph(object):
             self.G.nodes[course]['color'] = self.color_map[course]
             idx += 1
         nxg2j = json_graph.node_link_data(self.G)
-        with open('../Visualizations/static/graph.json', 'w') as f:
+        with open('Visualizations/static/graph.json', 'w') as f:
             json.dump(nxg2j, f, indent=4)
