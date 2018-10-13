@@ -2,19 +2,31 @@
 <!--http://bl.ocks.org/eyaler/10586116 - basis of original code-->
 <!DOCTYPE html>
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
 body {
   overflow:hidden;
-   margin:0;
+  margin:-40;
+  background-color: darkslategrey;
 }
 
-text {
-  font-family: sans-serif;
+.node text {
   pointer-events: none;
+  font: 10px sans-serif;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  margin-left: 40px;
+  margin-top:40px;
+  color:whitesmoke;
+  z-index: 30
 }
 
 </style>
 <body>
+<div class="title">When2Discrete Graph Visualization</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/JavaScript"> 

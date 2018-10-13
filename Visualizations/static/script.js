@@ -14,8 +14,8 @@ for (var i = 0; i < Object.keys(links).length; i++) {
     links[i].target = lab2id[links[i].target];
 }
 
-var width = 1000,
-    height = 800;
+var width = window.innerWidth,
+    height = window.innerHeight-120;
 
 var svg = d3.select("body")
         .append("svg")
@@ -39,16 +39,17 @@ var link = svg.selectAll('.link')
     .data(links)
     .enter().append('line')
     .attr('class', 'link')
-    .style("stroke", "black")           // colour the line
-    .style("stroke-width", 8)          // adjust line width
+    .style("stroke", "whitesmoke")           // colour the line
+    .style("stroke-width", width*0.001)          // adjust line width
     .style("stroke-linecap", "square")  // stroke-linecap type;
 
 var node = svg.selectAll('.node')
     .data(force.nodes())
     .enter().append('circle')
     .attr('class', 'node')
-    .attr('r', width * 0.01)
-    .style("fill", function (d) { return d.color; })
+    .attr('r', width * 0.007)
+    .style("fill", function (d) { return d.color; });
+
 
 function tick(e) {
 

@@ -3,169 +3,169 @@
     "graph": {}, 
     "nodes": [
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR2110", 
             "label": "ENGR2110"
         }, 
         {
-            "color": "blue", 
+            "color": "DarkSeaGreen", 
             "type": "circle", 
             "id": "MTH2110", 
             "label": "MTH2110"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "MTH2220", 
             "label": "MTH2220"
         }, 
         {
-            "color": "purple", 
+            "color": "DarkCyan", 
             "type": "circle", 
             "id": "AHSE1100", 
             "label": "AHSE1100"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR2097", 
             "label": "ENGR2097"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "AHSE2515", 
             "label": "AHSE2515"
         }, 
         {
-            "color": "blue", 
+            "color": "DarkSeaGreen", 
             "type": "circle", 
             "id": "ENGR4190", 
             "label": "ENGR4190"
         }, 
         {
-            "color": "purple", 
+            "color": "DarkCyan", 
             "type": "circle", 
             "id": "SCI1240", 
             "label": "SCI1240"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR2199 L", 
             "label": "ENGR2199 L"
         }, 
         {
-            "color": "green", 
+            "color": "LightSeaGreen", 
             "type": "circle", 
             "id": "SCI2097", 
             "label": "SCI2097"
         }, 
         {
-            "color": "pink", 
+            "color": "CadetBlue", 
             "type": "circle", 
             "id": "ENGR3330", 
             "label": "ENGR3330"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR2510", 
             "label": "ENGR2510"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "SCI1410", 
             "label": "SCI1410"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR3232", 
             "label": "ENGR3232"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR1200", 
             "label": "ENGR1200"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "MTH1111", 
             "label": "MTH1111"
         }, 
         {
-            "color": "blue", 
+            "color": "DarkSeaGreen", 
             "type": "circle", 
             "id": "AHSE1150", 
             "label": "AHSE1150"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR2199A", 
             "label": "ENGR2199A"
         }, 
         {
-            "color": "green", 
+            "color": "LightSeaGreen", 
             "type": "circle", 
             "id": "SCI1121", 
             "label": "SCI1121"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "OIE1000", 
             "label": "OIE1000"
         }, 
         {
-            "color": "brown", 
+            "color": "SteelBlue", 
             "type": "circle", 
             "id": "MTH2132", 
             "label": "MTH2132"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR1125", 
             "label": "ENGR1125"
         }, 
         {
-            "color": "red", 
+            "color": "PowderBlue", 
             "type": "circle", 
             "id": "ENGR3290", 
             "label": "ENGR3290"
         }, 
         {
-            "color": "blue", 
+            "color": "DarkSeaGreen", 
             "type": "circle", 
             "id": "AHSE2097", 
             "label": "AHSE2097"
         }, 
         {
-            "color": "blue", 
+            "color": "DarkSeaGreen", 
             "type": "circle", 
             "id": "AHSE1135", 
             "label": "AHSE1135"
         }, 
         {
-            "color": "green", 
+            "color": "LightSeaGreen", 
             "type": "circle", 
             "id": "ENGR3410", 
             "label": "ENGR3410"
         }, 
         {
-            "color": "green", 
+            "color": "LightSeaGreen", 
             "type": "circle", 
             "id": "ENGR3533", 
             "label": "ENGR3533"
         }, 
         {
-            "color": "blue", 
+            "color": "DarkSeaGreen", 
             "type": "circle", 
             "id": "CIE2018B", 
             "label": "CIE2018B"
