@@ -5,7 +5,7 @@ import flask
 import networkx as nx
 
 
-with open('static/graph.json') as f:
+with open('Visualizations/static/graph.json') as f:
     graph = json.load(f)
 nodes = graph["nodes"]
 links = graph["links"]
