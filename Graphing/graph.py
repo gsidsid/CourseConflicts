@@ -10,7 +10,7 @@ class Graph(object):
     G = nx.Graph()
     maxClassCap = 6
     semester_idx = 1
-    color_map = []
+    color_map = {}
 
     def __init__(self, semester=1):
         self.semester = semester
@@ -40,15 +40,18 @@ class Graph(object):
     def add_edge(self, offering1, offering2):
         self.G.add_edge(offering1, offering2)
 
+    def get_neighbors(self, vertex):
+        return self.G.neighbors(vertex)
+
     def get_edges(self):
         return list(self.G.edges)
 
     def slot_overlap(self, s, l):
         len_s = len(s)
-        return any(s == l[i:len_s + i] for i in xrange(len(l) - len_s + 1))
+        return any(s == l[i:len_s + i] for i in range(len(l) - len_s + 1))
 
     def color_vertex(self, offering, color):
-        self.color_map[self.get_vertices().index(offering)] = color
+        self.color_map[offering] = color
 
     def build_graph(self, course_book):
         for course in course_book:
@@ -58,7 +61,7 @@ class Graph(object):
             for label in _node_labels:
                 if self.slot_overlap(slots, course_book[label]):
                     self.add_edge(course, label)
-            self.color_map = ['black' for x in range(len(course_book))]
+            self.color_map[course] = 'black'
 
     def export_graph(self):
         idx = 0
