@@ -1,22 +1,20 @@
-import json
-
-import flask
-import networkx as nx
 from networkx.readwrite import json_graph
 
-app = flask.Flask(__name__)
+import json
+import flask
+import networkx as nx
+
 
 with open('static/graph.json') as f:
     graph = json.load(f)
-
 nodes = graph["nodes"]
-print(nodes)
 links = graph["links"]
-print(links)
+
+app = flask.Flask(__name__)
 
 @app.route('/')
 def serve():
     return flask.render_template("index.html", nodes=nodes, links=links)
 
-print('\n http://localhost:3029/ \n')
-app.run(debug=True,port=3029)
+print('\n When2Discrete is now available on http://localhost:2000/ \n')
+app.run(debug=True,port=2000)

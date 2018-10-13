@@ -16,7 +16,7 @@ class Graph(object):
         self.semester = semester
 
     def visualize(self):
-        pos = nx.random_layout(self.G)
+        pos = nx.circular_layout(self.G)
         nx.draw(
             self.G,
             pos,
@@ -32,7 +32,7 @@ class Graph(object):
         self.G.add_node(offering, type = "circle", label=offering)
 
     def get_vertices(self):
-        return (self.G.nodes)
+        return list(self.G.nodes)
 
     def get_vertex(self,idx):
         return list(self.G.nodes)[idx]
@@ -48,7 +48,7 @@ class Graph(object):
         return any(s == l[i:len_s + i] for i in xrange(len(l) - len_s + 1))
 
     def color_vertex(self, offering, color):
-        color_map[self.get_nodes.index(offering)] = color
+        self.color_map[self.get_vertices().index(offering)] = color
 
     def build_graph(self, course_book):
         for course in course_book:

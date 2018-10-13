@@ -4,9 +4,6 @@ $(document).ready(function(e) {
 
 var lab2id = {};
 
-console.log(nodes);
-console.log(links);
-
 for (var i = 0; i < Object.keys(nodes).length; i++) {
     lab2id[nodes[i].label] = i;
     nodes[i].id = i;
@@ -51,6 +48,7 @@ var node = svg.selectAll('.node')
     .enter().append('circle')
     .attr('class', 'node')
     .attr('r', width * 0.01)
+    .style("fill", function (d) { return d.color; })
 
 function tick(e) {
 

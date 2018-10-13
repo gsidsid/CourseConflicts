@@ -5,19 +5,12 @@ import networkx as nx
 
 R = Registrar()
 G = Graph()
-node_colors = []
 
-def color_graph_builtin(g):
-    nxGraph = g.G
-    d = nx.greedy_color(nxGraph, strategy='independent_set')
+def color_graph_test(g):
+    d = nx.greedy_color(g.G, strategy='independent_set')
     print(d)
-    used = []
-    color_map = R.slotMappings.values()
-    color_idx = -1
-    for class_item in d:
-        node_colors.append(color_map[d[class_item]])
-    return node_colors
-
+    for course in R.course_book:
+        g.color_vertex(course,R.slotMappings[str(d[course])])
 
 def color_graph(g):
     # TODO: Define course book further, implement graph coloring algorithm
@@ -25,6 +18,6 @@ def color_graph(g):
 
 
 G.build_graph(R.course_book)
-G.color_map = color_graph_builtin(G)
+color_graph_test(G)
 G.visualize()
 G.export_graph()
