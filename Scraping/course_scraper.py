@@ -48,5 +48,5 @@ for i in range(len(course_codes_raw)):
         course_book[course].append(slot_cln.replace('AM', ''))
 
 print(course_book)
-with open('../Courses/course_book_scraped.json', 'w') as fp:
+with open('../Courses/course_book.json', 'w') as fp:
     json.dump(course_book, fp)

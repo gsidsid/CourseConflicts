@@ -1,3 +1,21 @@
+$(document).ready(function(e) {
+
+});
+
+var lab2id = {};
+
+console.log(nodes);
+console.log(links);
+
+for (var i = 0; i < Object.keys(nodes).length; i++) {
+    lab2id[nodes[i].label] = i;
+    nodes[i].id = i;
+}
+
+for (var i = 0; i < Object.keys(links).length; i++) {
+    links[i].source = lab2id[links[i].source];
+    links[i].target = lab2id[links[i].target];
+}
 
 var width = 1000,
     height = 800;

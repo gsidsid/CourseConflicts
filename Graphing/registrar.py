@@ -2,7 +2,7 @@ import json
 
 class Registrar(object):
 
-    course_book = json.loads(open('../Courses/course_book_scraped.json').read())
+    course_book = json.loads(open('../Courses/course_book.json').read())
 
     slotMappings = {
         "0": "red",
