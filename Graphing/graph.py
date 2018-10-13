@@ -17,11 +17,14 @@ class Graph(object):
 
     def visualize(self):
         pos = nx.circular_layout(self.G)
+        node_colors = []
+        for course in list(self.get_vertices()):
+            node_colors.append(self.color_map[course])
         nx.draw(
             self.G,
             pos,
             font_size=16,
-            node_color=self.color_map,
+            node_color=node_colors,
             with_labels=False)
         for p in pos:  # raise text positions
             pos[p][1] += 0.04
@@ -66,7 +69,7 @@ class Graph(object):
     def export_graph(self):
         idx = 0
         for course in list(self.get_vertices()):
-            self.G.nodes[course]['color'] = self.color_map[idx]
+            self.G.nodes[course]['color'] = self.color_map[course]
             idx += 1
         nxg2j = json_graph.node_link_data(self.G)
         with open('../Visualizations/static/graph.json', 'w') as f:
