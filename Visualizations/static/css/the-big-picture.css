@@ -7,6 +7,7 @@
 body {
   background-color: "#f7f7f7";
   overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -27,4 +28,12 @@ body {
 .node text {
   pointer-events: none;
   font-size: 10px;
+}
+
+text {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    pointer-events: none;
 }

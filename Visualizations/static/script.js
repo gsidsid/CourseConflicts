@@ -27,7 +27,7 @@ var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
     .on('tick', tick)
-    .linkDistance(175)
+    .linkDistance(155)
     .gravity(.15)
     .friction(.85)
     .linkStrength(1)
@@ -35,28 +35,37 @@ var force = d3.layout.force()
     .chargeDistance(1000)
     .start();
 
-var link = svg.selectAll('.link')
+
+var link = svg.append("g")
+      .attr("class", "links")
+    .selectAll("line")
     .data(links)
-    .enter().append('line')
-    .attr('class', 'link')
-    .style("stroke", "black")           // colour the line
-    .style("stroke-width", 1)          // adjust line width
-    .style("stroke-linecap", "square")  // stroke-linecap type;
+    .enter().append("line")
+      .attr("stroke-width", function(d) { return 1; })
+      .style("stroke", "dimgray")
+      .style("stroke-linecap", "square");
 
-var node = svg.selectAll('.node')
+  var node = svg.append("g")
+      .attr("class", "nodes")
+    .selectAll("g")
     .data(nodes)
-    .enter()
-    .append("g")
-    .append('circle')
-    .attr('class', 'node')
-    .attr('r', width * 0.006)
-    .style("fill", function (d) { return d.color; })
+    .enter().append("g")
     .call(force.drag);
+    
+  var circles = node.append("circle")
+      .attr('r', width * 0.0065)
+    .style("fill", function (d) { return d.color; })
 
-node.append("text")
-      .attr("dx", 12)
-      .attr("dy", ".35em")
-      .text(function(d) { return d.label });
+  var labels = node.append("text")
+      .text(function(d) {
+        return d.label;
+      })
+      .attr('x', 17)
+      .attr('y', 4.5)
+      .attr('font-weight',500);
+
+  node.append("title")
+      .text(function(d) { return d.label; });
 
 function tick(e) {
 

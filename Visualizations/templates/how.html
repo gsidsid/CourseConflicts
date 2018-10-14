@@ -29,13 +29,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Graph</a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Graph
+              <a class="nav-link" href="how.html">How it works
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="how.html">How it works</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About us</a>
@@ -45,28 +45,10 @@
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <section>
-      <div class="container" id="over">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="mt-5">Course Conflict Graph</h1>
-            <p>The interactive graph on this page visualizes all the courses offered for a semester at Olin College. The courses appear as vertices on the graph, and are connected
-            if two classes meet at the same times on the same days. Using a backtracking algorithm, the vertices are properly vertex colored, such that it should not be possible to attend more than one class of the same color.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Bootstrap core JavaScript -->
     <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script type="text/JavaScript"> 
-      var nodes = JSON.parse('{{ nodes | tojson | safe}}');
-      var links = JSON.parse('{{ links | tojson | safe}}');
-    </script>
-    <script src="{{ url_for('static', filename='d3.js') }}"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
   </body>
 
 </html>
