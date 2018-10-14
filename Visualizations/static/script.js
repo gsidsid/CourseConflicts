@@ -14,8 +14,8 @@ for (var i = 0; i < Object.keys(links).length; i++) {
     links[i].target = lab2id[links[i].target];
 }
 
-var width = window.innerWidth,
-    height = window.innerHeight-120;
+var width = window.innerWidth-20,
+    height = window.innerHeight;
 
 var svg = d3.select("body")
         .append("svg")
@@ -27,35 +27,40 @@ var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
     .on('tick', tick)
-    .linkDistance(100)
+    .linkDistance(175)
     .gravity(.15)
-    .friction(.8)
+    .friction(.85)
     .linkStrength(1)
-    .charge(-425)
-    .chargeDistance(600)
+    .charge(-925)
+    .chargeDistance(1000)
     .start();
 
 var link = svg.selectAll('.link')
     .data(links)
     .enter().append('line')
     .attr('class', 'link')
-    .style("stroke", "whitesmoke")           // colour the line
-    .style("stroke-width", width*0.001)          // adjust line width
+    .style("stroke", "black")           // colour the line
+    .style("stroke-width", 1)          // adjust line width
     .style("stroke-linecap", "square")  // stroke-linecap type;
 
 var node = svg.selectAll('.node')
-    .data(force.nodes())
-    .enter().append('circle')
+    .data(nodes)
+    .enter()
+    .append("g")
+    .append('circle')
     .attr('class', 'node')
-    .attr('r', width * 0.007)
-    .style("fill", function (d) { return d.color; });
+    .attr('r', width * 0.006)
+    .style("fill", function (d) { return d.color; })
+    .call(force.drag);
 
+node.append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.label });
 
 function tick(e) {
 
-    node.attr('cx', function(d) { return d.x; })
-        .attr('cy', function(d) { return d.y; })
-        .call(force.drag);
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
     link.attr('x1', function(d) { return d.source.x; })
         .attr('y1', function(d) { return d.source.y; })

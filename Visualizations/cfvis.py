@@ -16,5 +16,5 @@ app = flask.Flask(__name__)
 def serve():
     return flask.render_template("index.html", nodes=nodes, links=links)
 
-print('\n When2Discrete is now available on http://localhost:5056 \n')
-app.run(debug=True,port=5056)
+print('\n When2Discrete is now available on http://localhost:6012 \n')
+app.run(debug=True,port=6012)
