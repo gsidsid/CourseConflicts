@@ -13,19 +13,19 @@ links = graph["links"]
 
 application = flask.Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def serve():
     return flask.render_template("index.html", nodes=nodes, links=links)
 
-@app.route('/index.html')
+@application.route('/index.html')
 def returnHome():
     return flask.render_template("index.html", nodes=nodes, links=links)
 
-@app.route('/how.html')
+@application.route('/how.html')
 def how():
     return flask.render_template("how.html")
 
-@app.route('/about.html')
+@application.route('/about.html')
 def about():
     return flask.render_template("about.html")
 
