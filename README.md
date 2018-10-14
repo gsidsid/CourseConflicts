@@ -1,7 +1,6 @@
 
-![alt text](https://heroku-badge.herokuapp.com/?app=course-conflicts)
 # When2Discrete
-
+![alt text](https://heroku-badge.herokuapp.com/?app=course-conflicts)
 An application-based investigation of graph coloring algorithms for course scheduling conflict resolution. 
 
 ### Use:
