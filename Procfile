@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath Visualizations cfvis
+web: gunicorn -b :$PORT --pythonpath Visualizations cfvis

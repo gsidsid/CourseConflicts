@@ -29,5 +29,6 @@ def how():
 def about():
     return flask.render_template("about.html")
 
-print('\n When2Discrete deployment complete. \n')
-app.run(host='0.0.0.0',port=port)
+if __name__ == '__main__':
+    print('\n When2Discrete deployment complete. \n')
+    app.run(host='0.0.0.0',port=port)
