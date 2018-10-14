@@ -11,7 +11,7 @@ nodes = graph["nodes"]
 links = graph["links"]
 
 
-app = flask.Flask(__name__)
+application = flask.Flask(__name__)
 
 @app.route('/')
 def serve():
@@ -32,4 +32,4 @@ def about():
 if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 33507))
-    app.run(host='0.0.0.0',port=port)
+    application.run(host='0.0.0.0',port=port)
